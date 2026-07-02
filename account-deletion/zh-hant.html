@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>PeachFit 帳號刪除指南</title>
+<style>
+  :root {
+    --coral:#D2451E; --coral-soft:#FF7E6B; --ink:#1f2937;
+    --muted:#6b7280; --line:#e5e7eb; --bg:#ffffff; --th:#fff5f1;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    line-height:1.75; font-size:16px; letter-spacing:-0.01em;
+    word-break:keep-all; overflow-wrap:anywhere;
+  }
+  .topbar { height:4px; background:linear-gradient(90deg,var(--coral-soft),var(--coral)); }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:1.8rem; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
+  h2 { font-size:1.2rem; font-weight:700; color:var(--coral); margin:2.2em 0 .6em; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:1.02rem; font-weight:700; margin:1.4em 0 .4em; }
+  p { margin:.7em 0; }
+  ul,ol { margin:.6em 0; padding-left:1.4em; }
+  li { margin:.35em 0; }
+  strong { font-weight:700; }
+  a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
+  .tablewrap { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1em 0; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--th); font-weight:700; }
+  hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+  .langnav { margin:0 0 8px; font-size:.85rem; color:var(--muted); }
+  .langnav a { color:var(--muted); text-decoration:none; margin-right:10px; }
+  .langnav a:hover { color:var(--coral); }
+  @media (max-width:520px) {
+    body { font-size:15px; }
+    .wrap { padding:28px 16px 64px; }
+    h1 { font-size:1.5rem; }
+    h2 { font-size:1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<nav class="langnav"><a href="https://getpeachfit.github.io/account-deletion/ko.html">한국어</a> <a href="https://getpeachfit.github.io/account-deletion/en.html">English</a> <a href="https://getpeachfit.github.io/account-deletion/ja.html">日本語</a> <strong>繁體中文</strong></nav>
+<h1>PeachFit 帳號刪除指南</h1>
+<p>PeachFit（Ingbo Company）在此說明您刪除帳號及相關資訊的方式。</p>
+<p>僅從裝置上刪除 PeachFit 應用程式，並不會刪除您的 PeachFit 帳號或伺服器上同步的紀錄。若要刪除帳號及相關的伺服器儲存資訊，請使用以下任一方式。另外，刪除 PeachFit 帳號不會自動取消仍在有效期間的 PeachFit PRO 訂閱；若要停止後續扣款，請在 App Store 取消「訂閱項目」，或在 Google Play 取消訂閱。</p>
+<h2>1. 在應用程式內刪除（建議）</h2>
+<ol>
+<li>開啟 PeachFit 應用程式。</li>
+<li>前往下方的「紀錄」分頁，開啟右上角的「設定（齒輪圖示）」。</li>
+<li>選擇「刪除帳號」並依指示操作。</li>
+</ol>
+<p>在應用程式內刪除帳號時，儲存於本公司伺服器（Cloud Firestore）的帳號資訊與同步的運動紀錄將被刪除，該裝置上儲存的運動紀錄、問卷回覆、運動前狀態輸入及同意狀態也會一併清除。</p>
+<h2>2. 若您已無法使用應用程式</h2>
+<p>若您已刪除應用程式或無法登入，可透過電子郵件請求刪除帳號：</p>
+<ul>
+<li>電子郵件：<strong>ingbbocp@gmail.com</strong></li>
+<li>請一併載明<strong>註冊時使用的電子郵件地址</strong>（若您使用「使用 Apple 登入」並選擇「隱藏我的電子郵件」，則為帳號中顯示的轉寄用電子郵件地址）。我們會在確認身分後處理。</li>
+</ul>
+<p>若您以匿名方式使用 PeachFit，帳號未連結電子郵件地址，請盡可能使用應用程式內的刪除流程。針對匿名帳號的電子郵件刪除請求，可能需要額外資訊以確認帳號。</p>
+<h2>3. 刪除的資訊</h2>
+<ul>
+<li>帳號資訊：使用者識別碼（UID）、電子郵件地址、登入方式、匿名標記、帳號建立／登入／更新時間、新手引導完成狀態</li>
+<li>個人檔案：暱稱</li>
+<li>偏好設定：語言與地區設定</li>
+<li>同步的運動紀錄：儲存於本公司伺服器的訓練紀錄、運動紀錄歷程、動作紀錄及訓練進度</li>
+<li>連結至您的 PeachFit 帳號或應用程式使用者識別碼的購買與訂閱使用權限資訊；惟 Apple、Google 或其他付款／訂閱業者依其自身條款或法令義務保存的資訊除外。</li>
+</ul>
+<h2>4. 僅儲存於您裝置上的資訊</h2>
+<p>問卷回覆、運動前狀態輸入、收藏、推薦結果與顯示設定僅儲存於您的裝置上，不會傳送至本公司伺服器。若您以電子郵件請求刪除帳號（第 2 項），我們無法遠端清除留存於您裝置上的本機專用資訊；您可透過刪除應用程式或清除裝置上的應用程式資料自行移除。</p>
+<h2>5. 依法保存的資訊</h2>
+<p>若有依適用法令必須保存的資訊，我們會在該期間內與其他資訊分離保管，僅用於該必要目的，並於保存期間屆滿後銷毀。其他資訊將不遲延地刪除。</p>
+<h2>6. 處理期間</h2>
+<p>在您的請求與身分確認完成後，我們會不遲延地處理，最遲於 10 個工作天內完成刪除；惟特定資訊依適用法令要求或允許較長期間者除外。</p>
+<h2>7. 聯絡我們</h2>
+<p>有關帳號刪除及個人資料處理的詢問：ingbbocp@gmail.com</p>
+</main>
+</body>
+</html>

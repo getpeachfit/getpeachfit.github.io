@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>PeachFit アカウント削除ガイド</title>
+<style>
+  :root {
+    --coral:#D2451E; --coral-soft:#FF7E6B; --ink:#1f2937;
+    --muted:#6b7280; --line:#e5e7eb; --bg:#ffffff; --th:#fff5f1;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    line-height:1.75; font-size:16px; letter-spacing:-0.01em;
+    word-break:keep-all; overflow-wrap:anywhere;
+  }
+  .topbar { height:4px; background:linear-gradient(90deg,var(--coral-soft),var(--coral)); }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:1.8rem; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
+  h2 { font-size:1.2rem; font-weight:700; color:var(--coral); margin:2.2em 0 .6em; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:1.02rem; font-weight:700; margin:1.4em 0 .4em; }
+  p { margin:.7em 0; }
+  ul,ol { margin:.6em 0; padding-left:1.4em; }
+  li { margin:.35em 0; }
+  strong { font-weight:700; }
+  a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
+  .tablewrap { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1em 0; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--th); font-weight:700; }
+  hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+  .langnav { margin:0 0 8px; font-size:.85rem; color:var(--muted); }
+  .langnav a { color:var(--muted); text-decoration:none; margin-right:10px; }
+  .langnav a:hover { color:var(--coral); }
+  @media (max-width:520px) {
+    body { font-size:15px; }
+    .wrap { padding:28px 16px 64px; }
+    h1 { font-size:1.5rem; }
+    h2 { font-size:1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<nav class="langnav"><a href="https://getpeachfit.github.io/account-deletion/ko.html">한국어</a> <a href="https://getpeachfit.github.io/account-deletion/en.html">English</a> <strong>日本語</strong> <a href="https://getpeachfit.github.io/account-deletion/zh-hant.html">繁體中文</a></nav>
+<h1>PeachFit アカウント削除ガイド</h1>
+<p>PeachFit(Ingbo Company)は、ユーザーがご自身のアカウントおよび関連情報を削除する方法をご案内します。</p>
+<p>端末からPeachFitアプリを削除するだけでは、PeachFitアカウントおよびサーバーに同期された記録は削除されません。アカウントおよび関連するサーバー保存情報を削除するには、以下のいずれかの方法をご利用ください。また、PeachFitアカウントを削除しても、有効な PeachFit PRO サブスクリプションが自動的に解約されるわけではありません。今後の請求を止めるには、App Store ではサブスクリプションを解約し、Google Play では定期購入を解約してください。</p>
+<h2>1. アプリ内で削除する(推奨)</h2>
+<ol>
+<li>PeachFitアプリを起動します。</li>
+<li>画面下部の「記録」タブに移動し、右上の「設定(歯車アイコン)」を開きます。</li>
+<li>「アカウント削除」を選択し、案内に従って進めます。</li>
+</ol>
+<p>アプリ内でアカウントを削除すると、当社サーバー(Cloud Firestore)に保存されたアカウント情報および同期された運動記録が削除され、その端末に保存された運動記録、アンケート回答、運動前のコンディション入力、同意状態も併せて消去されます。</p>
+<h2>2. アプリを利用できない場合</h2>
+<p>すでにアプリを削除した場合や、ログインできない場合は、メールでアカウント削除を請求できます。</p>
+<ul>
+<li>メール: <strong>ingbbocp@gmail.com</strong></li>
+<li>登録に使用した<strong>メールアドレス</strong>(「Appleでサインイン」で「メールを非公開」を選択した場合は、アカウントに表示されるリレーメールアドレス)を併せてご記載ください。本人確認の後に処理します。</li>
+</ul>
+<p>匿名でPeachFitを利用しており、アカウントに紐付くメールアドレスがない場合は、可能な限りアプリ内の削除フローをご利用ください。匿名アカウントに対するメールでの削除請求には、アカウント確認のための追加情報が必要になる場合があります。</p>
+<h2>3. 削除される情報</h2>
+<ul>
+<li>アカウント情報: ユーザー識別子(UID)、メールアドレス、ログイン方法、匿名フラグ、アカウント作成・ログイン・更新日時、オンボーディング完了状態</li>
+<li>プロフィール: ニックネーム</li>
+<li>環境設定: 言語・地域設定</li>
+<li>同期された運動記録: 当社サーバーに保存された運動セッション記録、運動履歴、種目別記録、ルーティン進行状況</li>
+<li>PeachFitアカウントまたはアプリユーザー識別子に紐付く購入・サブスクリプション利用権限情報。ただし、Apple、Googleその他の決済・サブスクリプション事業者が、それぞれの規約または法令上の義務に基づき保持する情報は除きます。</li>
+</ul>
+<h2>4. 端末内にのみ保存される情報</h2>
+<p>アンケート回答、運動前のコンディション入力、お気に入り、レコメンド結果、表示設定は、端末内にのみ保存され、当社サーバーには送信されません。メールでアカウント削除を請求した場合(第2項)、端末に残るローカル専用の情報を当社が遠隔で消去することはできません。アプリの削除、または端末でのアプリデータの消去により、ご自身で削除できます。</p>
+<h2>5. 法令により保存される情報</h2>
+<p>適用法令により保存が必要な情報がある場合、他の情報と分離して保管し、当該目的にのみ利用し、保存期間の満了後に破棄します。それ以外の情報は、遅滞なく削除します。</p>
+<h2>6. 処理期間</h2>
+<p>請求および本人確認が完了した後、遅滞なく処理し、遅くとも10営業日以内に完了します。ただし、特定の情報について、適用法令上より長い期間が要求または許容される場合を除きます。</p>
+<h2>7. お問い合わせ</h2>
+<p>アカウント削除および個人情報の取扱いに関するお問い合わせ: ingbbocp@gmail.com</p>
+</main>
+</body>
+</html>

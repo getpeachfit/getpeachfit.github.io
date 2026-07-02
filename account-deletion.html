@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
-<title>피치핏 계정 삭제 안내</title>
+<title>PeachFit Account Deletion · 계정 삭제 안내</title>
 <style>
   :root {
     --coral:#D2451E; --coral-soft:#FF7E6B; --ink:#1f2937;
@@ -14,64 +14,59 @@
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
-    line-height:1.75; font-size:16px; letter-spacing:-0.01em;
-    word-break:keep-all; overflow-wrap:anywhere;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    line-height:1.7; font-size:16px; letter-spacing:-0.01em;
   }
   .topbar { height:4px; background:linear-gradient(90deg,var(--coral-soft),var(--coral)); }
-  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
-  h1 { font-size:1.8rem; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
-  h2 { font-size:1.2rem; font-weight:700; color:var(--coral); margin:2.2em 0 .6em; padding-bottom:6px; border-bottom:1px solid var(--line); }
-  h3 { font-size:1.02rem; font-weight:700; margin:1.4em 0 .4em; }
-  p { margin:.7em 0; }
-  ul,ol { margin:.6em 0; padding-left:1.4em; }
-  li { margin:.35em 0; }
-  strong { font-weight:700; }
-  a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
-  .tablewrap { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1em 0; }
-  table { width:100%; border-collapse:collapse; font-size:.92rem; }
-  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
-  th { background:var(--th); font-weight:700; }
-  hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
-  .footnote { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
-  @media (max-width:520px) {
-    body { font-size:15px; }
-    .wrap { padding:28px 16px 64px; }
-    h1 { font-size:1.5rem; }
-    h2 { font-size:1.1rem; }
+  .wrap { max-width:640px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:1.6rem; font-weight:800; margin:8px 0 4px; letter-spacing:-0.02em; }
+  .sub { color:var(--muted); font-size:.95rem; margin:0 0 28px; }
+  .note { display:none; background:var(--th); border-radius:12px; padding:10px 14px; font-size:.9rem; color:var(--coral); margin:0 0 16px; }
+  ul.langs { list-style:none; margin:0; padding:0; }
+  ul.langs li { margin:0 0 10px; }
+  ul.langs a {
+    display:flex; justify-content:space-between; align-items:center;
+    border:1px solid var(--line); border-radius:14px; padding:16px 18px;
+    text-decoration:none; color:var(--ink); font-weight:700;
   }
+  ul.langs a span.doc { color:var(--muted); font-weight:500; font-size:.9rem; }
+  ul.langs a:hover { border-color:var(--coral-soft); }
+  ul.langs li.suggest a { border-color:var(--coral); background:var(--th); }
+  .foot { margin-top:36px; color:var(--muted); font-size:.85rem; }
+  .foot a { color:var(--coral); }
 </style>
 </head>
 <body>
 <div class="topbar"></div>
 <main class="wrap">
-<h1>피치핏 계정 삭제 안내</h1>
-<p>피치핏(잉보컴퍼니)은 이용자가 본인의 계정과 관련 정보를 삭제할 수 있는 방법을 안내합니다.</p>
-<h2>1. 앱에서 직접 삭제 (권장)</h2>
-<ol>
-<li>피치핏 앱을 실행합니다.</li>
-<li>하단 <strong>기록</strong> 탭으로 이동한 뒤, 우측 상단 <strong>설정(톱니 아이콘)</strong> 을 엽니다.</li>
-<li><strong>회원 탈퇴</strong> 를 선택하고 안내에 따라 진행합니다.</li>
-</ol>
-<p>탈퇴 시 회사 서버(Cloud Firestore)에 저장된 계정 정보(회원 식별자, 이메일, 가입 방식 등)와 환경 설정이 삭제됩니다.</p>
-<h2>2. 앱을 이용할 수 없는 경우</h2>
-<p>앱을 이미 삭제했거나 로그인할 수 없는 경우, 아래로 계정 삭제를 요청할 수 있습니다.</p>
-<ul>
-<li>이메일: <strong>ingbbocp@gmail.com</strong></li>
-<li>요청 시 <strong>가입에 사용한 이메일 주소</strong>를 함께 적어주세요. 본인 확인 후 처리됩니다.</li>
+<h1>PeachFit Account Deletion</h1>
+<p class="sub">계정 삭제 안내 · アカウント削除ガイド · 帳號刪除指南 — Please select your language.</p>
+<p class="note" id="suggest-note">Suggested for your browser language ↓</p>
+<ul class="langs">
+  <li id="lang-ko"><a href="https://getpeachfit.github.io/account-deletion/ko.html" hreflang="ko" lang="ko">한국어 <span class="doc">계정 삭제 안내</span></a></li>
+  <li id="lang-en"><a href="https://getpeachfit.github.io/account-deletion/en.html" hreflang="en" lang="en">English <span class="doc">Account Deletion Guide</span></a></li>
+  <li id="lang-ja"><a href="https://getpeachfit.github.io/account-deletion/ja.html" hreflang="ja" lang="ja">日本語 <span class="doc">アカウント削除ガイド</span></a></li>
+  <li id="lang-zh-hant"><a href="https://getpeachfit.github.io/account-deletion/zh-hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文 <span class="doc">帳號刪除指南</span></a></li>
 </ul>
-<h2>3. 삭제되는 정보</h2>
-<ul>
-<li>계정 정보: 회원 식별자(UID), 이메일 주소, 가입 방식, 익명 이용 여부, 가입·접속·수정 일시, 온보딩 완료 여부</li>
-<li>환경 설정: 선호 언어·지역 설정</li>
-</ul>
-<p>운동 기록, 루틴 진행 기록, 즐겨찾기, 설문 응답, 추천 결과 등은 이용자 기기에만 저장되어 있으며 회사 서버로 전송되지 않습니다. 이 정보는 앱 삭제 또는 기기의 앱 데이터 삭제 시 함께 제거됩니다.</p>
-<h2>4. 보존되는 정보</h2>
-<p>관계 법령에 따라 보존이 필요한 정보가 있는 경우, 해당 기간 동안 다른 정보와 분리하여 보관한 뒤 보존기간이 끝나면 파기합니다. 그 외의 정보는 지체 없이 삭제합니다.</p>
-<h2>5. 처리 기간</h2>
-<p>요청 및 본인 확인이 완료되면 지체 없이 처리하며, 늦어도 영업일 기준 10일 이내에 완료합니다.</p>
-<h2>6. 문의</h2>
-<p>계정 삭제 및 개인정보 처리에 관한 문의: ingbbocp@gmail.com</p>
+<p class="foot">Privacy policy / 개인정보처리방침: <a href="https://getpeachfit.github.io/privacy.html">privacy</a> · Contact: ingbbocp@gmail.com</p>
 </main>
+<script>
+(function () {
+  var l = (navigator.language || '').toLowerCase();
+  var key = 'en';
+  if (l.indexOf('ko') === 0) { key = 'ko'; }
+  else if (l.indexOf('ja') === 0) { key = 'ja'; }
+  else if (l.indexOf('zh') === 0) {
+    key = (l.indexOf('hans') > -1 || l === 'zh-cn' || l === 'zh-sg') ? 'en' : 'zh-hant';
+  }
+  var el = document.getElementById('lang-' + key);
+  if (el) {
+    el.classList.add('suggest');
+    el.parentNode.insertBefore(el, el.parentNode.firstChild);
+    var s = document.getElementById('suggest-note');
+    if (s) { s.style.display = 'block'; }
+  }
+})();
+</script>
 </body>
 </html>

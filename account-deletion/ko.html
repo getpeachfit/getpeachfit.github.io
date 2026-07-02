@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>피치핏 계정 삭제 안내</title>
+<style>
+  :root {
+    --coral:#D2451E; --coral-soft:#FF7E6B; --ink:#1f2937;
+    --muted:#6b7280; --line:#e5e7eb; --bg:#ffffff; --th:#fff5f1;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    line-height:1.75; font-size:16px; letter-spacing:-0.01em;
+    word-break:keep-all; overflow-wrap:anywhere;
+  }
+  .topbar { height:4px; background:linear-gradient(90deg,var(--coral-soft),var(--coral)); }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:1.8rem; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
+  h2 { font-size:1.2rem; font-weight:700; color:var(--coral); margin:2.2em 0 .6em; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:1.02rem; font-weight:700; margin:1.4em 0 .4em; }
+  p { margin:.7em 0; }
+  ul,ol { margin:.6em 0; padding-left:1.4em; }
+  li { margin:.35em 0; }
+  strong { font-weight:700; }
+  a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
+  .tablewrap { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1em 0; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--th); font-weight:700; }
+  hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+  .langnav { margin:0 0 8px; font-size:.85rem; color:var(--muted); }
+  .langnav a { color:var(--muted); text-decoration:none; margin-right:10px; }
+  .langnav a:hover { color:var(--coral); }
+  @media (max-width:520px) {
+    body { font-size:15px; }
+    .wrap { padding:28px 16px 64px; }
+    h1 { font-size:1.5rem; }
+    h2 { font-size:1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<nav class="langnav"><strong>한국어</strong> <a href="https://getpeachfit.github.io/account-deletion/en.html">English</a> <a href="https://getpeachfit.github.io/account-deletion/ja.html">日本語</a> <a href="https://getpeachfit.github.io/account-deletion/zh-hant.html">繁體中文</a></nav>
+<h1>피치핏 계정 삭제 안내</h1>
+<p>피치핏(잉보컴퍼니)은 이용자가 본인의 계정과 관련 정보를 삭제할 수 있는 방법을 안내합니다.</p>
+<p>앱을 기기에서 삭제하는 것만으로는 피치핏 계정과 서버에 동기화된 기록이 삭제되지 않습니다. 계정과 서버 저장 정보를 삭제하려면 아래 방법을 이용해 주세요. 또한 회원 탈퇴가 피치핏 PRO 구독의 자동 해지를 의미하지 않습니다. 결제 중단을 원하시면 App Store 또는 Google Play 계정 설정에서 구독을 해지해 주세요.</p>
+<h2>1. 앱에서 직접 삭제 (권장)</h2>
+<ol>
+<li>피치핏 앱을 실행합니다.</li>
+<li>하단 <strong>기록</strong> 탭으로 이동한 뒤, 우측 상단 <strong>설정(톱니 아이콘)</strong> 을 엽니다.</li>
+<li><strong>회원 탈퇴</strong> 를 선택하고 안내에 따라 진행합니다.</li>
+</ol>
+<p>탈퇴 시 회사 서버(Cloud Firestore)에 저장된 계정 정보와 동기화된 운동 기록이 삭제되며, 해당 기기에 저장된 운동 기록·설문 응답·운동 전 컨디션 입력·동의 상태도 함께 정리됩니다.</p>
+<h2>2. 앱을 이용할 수 없는 경우</h2>
+<p>앱을 이미 삭제했거나 로그인할 수 없는 경우, 아래로 계정 삭제를 요청할 수 있습니다.</p>
+<ul>
+<li>이메일: <strong>ingbbocp@gmail.com</strong></li>
+<li>요청 시 <strong>가입에 사용한 이메일 주소</strong>(Apple 로그인에서 이메일 가리기를 사용한 경우, 계정에 표시되는 릴레이 이메일)를 함께 적어주세요. 본인 확인 후 처리됩니다.</li>
+</ul>
+<p>익명으로 이용 중이어서 계정에 연결된 이메일이 없는 경우, 가능하면 앱 내 회원 탈퇴를 이용해 주세요. 익명 계정에 대한 이메일 삭제 요청은 계정 확인을 위해 추가 정보가 필요할 수 있습니다.</p>
+<h2>3. 삭제되는 정보</h2>
+<ul>
+<li>계정 정보: 회원 식별자(UID), 이메일 주소, 가입 방식, 익명 이용 여부, 가입·접속·수정 일시, 온보딩 완료 여부</li>
+<li>프로필: 닉네임</li>
+<li>환경 설정: 선호 언어·지역 설정</li>
+<li>동기화된 운동 기록: 서버에 저장된 운동 세션 기록, 운동 히스토리, 운동별 기록, 루틴 진행 상태</li>
+<li>계정(또는 앱 이용자 식별자)에 연결된 구독 권한 정보. 다만 Apple·Google 등 결제·구독 사업자가 자체 약관 또는 법령상 의무에 따라 보존하는 정보는 제외됩니다.</li>
+</ul>
+<h2>4. 이용자 기기에만 저장되는 정보</h2>
+<p>설문 응답, 운동 전 컨디션 입력, 즐겨찾기, 추천 결과, 화면 설정은 이용자 기기에만 저장되며 회사 서버로 전송되지 않습니다. 이메일로 계정 삭제를 요청하는 경우(2번), 회사가 기기에 남아 있는 기기 전용 정보를 원격으로 삭제할 수는 없습니다. 해당 정보는 앱 삭제 또는 기기의 앱 데이터 삭제로 직접 제거할 수 있습니다.</p>
+<h2>5. 보존되는 정보</h2>
+<p>관계 법령에 따라 보존이 필요한 정보가 있는 경우, 해당 기간 동안 다른 정보와 분리하여 보관하고 보존 목적으로만 이용하며, 보존기간이 끝나면 파기합니다. 그 외의 정보는 지체 없이 삭제합니다.</p>
+<h2>6. 처리 기간</h2>
+<p>요청 및 본인 확인이 완료되면 지체 없이 처리하며, 늦어도 영업일 기준 10일 이내에 완료합니다. 다만 특정 정보에 대해 관계 법령상 더 긴 기간이 요구되거나 허용되는 경우는 예외로 합니다.</p>
+<h2>7. 문의</h2>
+<p>계정 삭제 및 개인정보 처리에 관한 문의: ingbbocp@gmail.com</p>
+</main>
+</body>
+</html>
