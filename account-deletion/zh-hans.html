@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>PeachFit 帐号删除指南</title>
+<style>
+  :root {
+    --coral:#D2451E; --coral-soft:#FF7E6B; --ink:#1f2937;
+    --muted:#6b7280; --line:#e5e7eb; --bg:#ffffff; --th:#fff5f1;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.75; font-size:16px; letter-spacing:-0.01em;
+    word-break:keep-all; overflow-wrap:anywhere;
+  }
+  .topbar { height:4px; background:linear-gradient(90deg,var(--coral-soft),var(--coral)); }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:1.8rem; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
+  h2 { font-size:1.2rem; font-weight:700; color:var(--coral); margin:2.2em 0 .6em; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:1.02rem; font-weight:700; margin:1.4em 0 .4em; }
+  p { margin:.7em 0; }
+  ul,ol { margin:.6em 0; padding-left:1.4em; }
+  li { margin:.35em 0; }
+  strong { font-weight:700; }
+  a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
+  .tablewrap { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1em 0; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--th); font-weight:700; }
+  hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+  .langnav { margin:0 0 8px; font-size:.85rem; color:var(--muted); }
+  .langnav a { color:var(--muted); text-decoration:none; margin-right:10px; }
+  .langnav a:hover { color:var(--coral); }
+  @media (max-width:520px) {
+    body { font-size:15px; }
+    .wrap { padding:28px 16px 64px; }
+    h1 { font-size:1.5rem; }
+    h2 { font-size:1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<nav class="langnav"><a href="https://getpeachfit.github.io/account-deletion/ko.html">한국어</a> <a href="https://getpeachfit.github.io/account-deletion/en.html">English</a> <a href="https://getpeachfit.github.io/account-deletion/ja.html">日本語</a> <a href="https://getpeachfit.github.io/account-deletion/zh-hant.html">繁體中文</a> <strong>简体中文</strong></nav>
+<h1>PeachFit 帐号删除指南</h1>
+<p>PeachFit（Ingbo Company）在此说明您删除帐号及相关资讯的方式。</p>
+<p>仅从装置上删除 PeachFit 应用程式，并不会删除您的 PeachFit 帐号或伺服器上同步的纪录。若要删除帐号及相关的伺服器储存资讯，请使用以下任一方式。另外，删除 PeachFit 帐号不会自动取消仍在有效期间的 PeachFit PRO 订阅；若要停止后续扣款，请在 App Store 取消「订阅项目」，或在 Google Play 取消订阅。</p>
+<h2>1. 在应用程式内删除（建议）</h2>
+<ol>
+<li>开启 PeachFit 应用程式。</li>
+<li>前往下方的「纪录」分页，开启右上角的「设定（齿轮图示）」。</li>
+<li>选择「删除帐号」并依指示操作。</li>
+</ol>
+<p>在应用程式内删除帐号时，储存于本公司伺服器（Cloud Firestore）的帐号资讯与同步的运动纪录将被删除，该装置上储存的运动纪录、问卷回复、运动前状态输入及同意状态也会一并清除。</p>
+<h2>2. 若您已无法使用应用程式</h2>
+<p>若您已删除应用程式或无法登入，可透过电子邮件请求删除帐号：</p>
+<ul>
+<li>电子邮件：<strong>ingbbocp@gmail.com</strong></li>
+<li>请一并载明<strong>注册时使用的电子邮件地址</strong>（若您使用「使用 Apple 登入」并选择「隐藏我的电子邮件」，则为帐号中显示的转寄用电子邮件地址）。我们会在确认身分后处理。</li>
+</ul>
+<p>若您以匿名方式使用 PeachFit，帐号未连结电子邮件地址，请尽可能使用应用程式内的删除流程。针对匿名帐号的电子邮件删除请求，可能需要额外资讯以确认帐号。</p>
+<h2>3. 删除的资讯</h2>
+<ul>
+<li>帐号资讯：使用者识别码（UID）、电子邮件地址、登入方式、匿名标记、帐号建立／登入／更新时间、新手引导完成状态</li>
+<li>个人档案：暱称</li>
+<li>偏好设定：语言与地区设定</li>
+<li>同步的运动纪录：储存于本公司伺服器的训练纪录、运动纪录历程、动作纪录及训练进度</li>
+<li>连结至您的 PeachFit 帐号或应用程式使用者识别码的购买与订阅使用权限资讯；惟 Apple、Google 或其他付款／订阅业者依其自身条款或法令义务保存的资讯除外。</li>
+</ul>
+<h2>4. 仅储存于您装置上的资讯</h2>
+<p>问卷回复、运动前状态输入、收藏、推荐结果与显示设定仅储存于您的装置上，不会传送至本公司伺服器。若您以电子邮件请求删除帐号（第 2 项），我们无法远端清除留存于您装置上的本机专用资讯；您可透过删除应用程式或清除装置上的应用程式资料自行移除。</p>
+<h2>5. 依法保存的资讯</h2>
+<p>若有依适用法令必须保存的资讯，我们会在该期间内与其他资讯分离保管，仅用于该必要目的，并于保存期间届满后销毁。其他资讯将不迟延地删除。</p>
+<h2>6. 处理期间</h2>
+<p>在您的请求与身分确认完成后，我们会不迟延地处理，最迟于 10 个工作天内完成删除；惟特定资讯依适用法令要求或允许较长期间者除外。</p>
+<h2>7. 联络我们</h2>
+<p>有关帐号删除及个人资料处理的询问：ingbbocp@gmail.com</p>
+</main>
+</body>
+</html>
